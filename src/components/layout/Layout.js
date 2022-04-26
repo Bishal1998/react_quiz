@@ -9,10 +9,11 @@ const Layout = () => {
 
     const [score, setScore] = useState(0);
     const [timer, setTimer] = useState(0);
+    const [start, setStart] = useState(false);
 
     return (
         <div className="layout">
-            <AppContext.Provider value={{ score, timer, setScore, setTimer }}>
+            <AppContext.Provider value={{ score, timer, setScore, setTimer, start, setStart }}>
                 <Topbar />
                 <div className="layout_divider"></div>
                 <Question />

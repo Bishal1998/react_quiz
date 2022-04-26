@@ -1,11 +1,12 @@
 import './Question.css';
 import { Data } from '../../const/data/Data';
-import { useState, useEffect, useContext } from 'react';
+import { useState, useContext } from 'react';
 import { AppContext } from '../layout/Layout';
+import Start from '../start/Start';
 
 const Question = () => {
 
-    const { score, timer, setScore, setTimer } = useContext(AppContext);
+    const { score, setScore, start, setStart } = useContext(AppContext);
 
     const randomGenerate = () => {
         const random = Math.floor(Math.random() * Data.length)
@@ -60,7 +61,11 @@ const Question = () => {
             </div>
             {correct === true && <div>Correct</div>}
             {correct === false && <div>Wrong</div>}
-            {index === 7 && <div> Congratulations you scored {score} points. </div>}
+            {index === 7 && <>
+                <div> Congratulations you scored {score} points.</div>
+                <div>  {start === false ? <Start /> : ''}</div>
+            </>}
+
         </div>
     )
 }
