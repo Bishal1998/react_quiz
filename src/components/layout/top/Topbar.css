@@ -1,0 +1,9 @@
+.topbar {
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+}
+
+.topbar_title {
+    font-weight: 600;
+}

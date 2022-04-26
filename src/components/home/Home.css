@@ -1,0 +1,69 @@
+.home {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 10%;
+    background-color: #020024;
+    border-radius: 30px;
+    color: white;
+    padding: 3rem 0;
+}
+
+.home__ready {
+    font-weight: 600;
+}
+
+.home__button {
+    display: flex;
+    flex-direction: row;
+}
+
+.home__button_yes_button {
+    background-image: linear-gradient(to right, #C04848 0%, #480048 51%, #C04848 100%)
+}
+
+.home__button_yes_button {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    outline: none;
+    border: none;
+}
+
+.home__button_yes_button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.home__button_no_button {
+    background-image: linear-gradient(to right, #7b4397 0%, #dc2430 51%, #7b4397 100%)
+}
+
+.home__button_no_button {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.home__button_no_button:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
